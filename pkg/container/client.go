@@ -266,7 +266,7 @@ func (client dockerClient) PullImage(ctx context.Context, container Container) e
 	imageName := container.ImageName()
 
 	fields := log.Fields{
-		"image": imageName,
+		"image":     imageName,
 		"container": containerName,
 	}
 
